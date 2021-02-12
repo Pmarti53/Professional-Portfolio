@@ -17,7 +17,7 @@ body {
 
 .header h1 {
     font-size: 45px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
     font-weight:lighter;
 }
 
@@ -28,7 +28,7 @@ body {
 
 .links ul nav {
     font-size: 25px;
-    padding: 15px;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
@@ -37,7 +37,7 @@ body {
 }
 
 .links ul nav a {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    /*font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif*/
 }
 /*Hero*/
 
@@ -57,22 +57,32 @@ body {
 .hero h1 {
     color:white;
     text-align: center;
+    justify-content: center;
 }
 
 .about {
+    display: flex;
     background-color: silver;
-    color: azure;
-    height: 300px;
+    color:black;
+    height: 500px;
+    padding: 50px;
 
 }
 
 .about h2 {
     text-align: center;
 }
-
-.about h2 p {
-    background-color: azure;
+.about p {
+    float: right;
 }
+
+
+.about img {
+    margin-left: 30px;
+    max-width: 200px;
+    max-height: 400px;
+}
+
 
 .projects {
     display: flex;
@@ -80,24 +90,36 @@ body {
     height: 800px;
     color: azure;
     text-align: start;
+    align-items: flex-end;
 }
+
+.projects img {
+    max-width: 300px;
+    max-height: 200px;
+    align-items: center;
+}
+
 
 .box1 {
     background-color: silver;
+    height: 700px;
     width: 300px;
 }
 
 .box2 {
     background-color: slategray;
+    height: 600px;
     width: 300px;
 }
 
 .box3 {
     background-color: gray;
+    height: 500px;
     width: 300px;
 }
 
 .footer {
     border: white 10px;
     background-color: white;
+    height: 75px;
 }
