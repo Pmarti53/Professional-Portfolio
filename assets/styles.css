@@ -5,8 +5,8 @@
 }
 
 body {
-    background-image: url(../assets/images/IMG_3521.jpg);
-    background-size: cover;
+    background-image: url(../assets/images/code\ 2.jpg);
+    background-size:contain;
 }
 .header {
     background-color: black;
@@ -16,16 +16,18 @@ body {
 }
 
 .header h1 {
-    font-weight:lighter;
     font-size: 45px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:lighter;
 }
 
-.links {
-    text-align: right;
-    size: 35px;
+.header nav {
+    margin: 10px;
 }
+
+
 .links ul nav {
+    font-size: 25px;
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +36,31 @@ body {
     list-style: none;
 }
 
+.links ul nav a {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+/*Hero*/
+
+.hero {
+    height: 500px;
+    background-image: url(../assets/images/computer\ keys.jpg);
+    background-size: cover;
+    background-position: center ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-position: 80%;
+    border-bottom: silver solid;
+}
+
+.hero h1 {
+    color:white;
+    text-align: center;
+}
+
 .about {
+    background-color: silver;
     color: azure;
     height: 300px;
 
@@ -52,11 +78,10 @@ body {
     display: flex;
     justify-content: space-evenly;
     height: 800px;
-}
-.projects h2 {
-    text-align: center;
     color: azure;
+    text-align: start;
 }
+
 .box1 {
     background-color: silver;
     width: 300px;
