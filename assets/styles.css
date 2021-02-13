@@ -60,19 +60,21 @@ body {
     justify-content: center;
 }
 
+/*ABOUT*/
+
 .about {
     display: flex;
     background-color: silver;
     color:black;
-    height: 500px;
+    height: auto;
     padding: 50px;
-
 }
 
 .about h2 {
     text-align: center;
 }
-.about p {
+
+.floatright {
     float: right;
 }
 
