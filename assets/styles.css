@@ -108,6 +108,8 @@ img {
 
 .textDiv {
     background-color: azure;
+    opacity: .75;
+    margin-left: 30px;
 }
 
 .projects img {
