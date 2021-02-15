@@ -3,14 +3,15 @@
     padding: 0;
     margin: 0;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 /*BODY*/
 
 body {
-    background-image: url(../assets/images/Background\ 2.jpg);
+    background-color: #143a52;
     background-size:contain;
+    flex-wrap: wrap;
 }
 
 /*HEADER*/
@@ -44,8 +45,17 @@ body {
     
 }
 
+a:visited {
+    color: #D0D2D5;
+    text-decoration: none;
+}
+
 a {
     text-decoration: none;
+}
+
+a:hover {
+    color: #275d83;
 }
 
 /*Hero*/
@@ -73,12 +83,14 @@ a {
     padding: 50px;
 }
 
-.floatright {
+.floatright p {
     float: right;
 }
 
 img {
     float: none;
+    border-radius: 50%;
+
 }
 
 
@@ -88,6 +100,7 @@ img {
     margin-left: 30px;
     max-width: 200px;
     max-height: 400px;
+    object-fit: contain;
 }
 
 
@@ -113,12 +126,18 @@ img {
 #projectContainer{
     display: flex;
     align-content: flex-end;
-    justify-content: space-evenly; 
+    justify-content: space-around; 
     flex: wrap;
 } 
 
+a:hover .projects {
+    color: #c1bab1;
+}
+    
+
 
 .box1 {
+    display: inline-flex;
     background-color: silver;
     height: 700px;
     width: 300px;
@@ -128,6 +147,7 @@ img {
 }
 
 .box2 {
+    display: inline-flex;
     background-color: slategray;
     height: 600px;
     width: 300px;
@@ -137,6 +157,7 @@ img {
 }
 
 .box3 {
+    display: inline-flex;
     background-color: gray;
     height: 500px;
     width: 300px;
@@ -163,3 +184,74 @@ img {
     align-content: space-between;
     justify-content: space-evenly;
 }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+    
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+
+    #projectContainer {
+        flex-wrap: wrap;
+    }
+
+
+
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+
+
+    .about img {
+        display: block;
+        float: none;
+        margin: 0 auto 20px;
+    }
+    
+    #projectContainer {
+        flex-wrap: wrap;
+    }
+
+    .about h2 {
+        float: left;
+        text-align: wrap;
+    }
+
+    .footerText {
+        display: flex;
+        font-size: 15px;
+        text-align: center;
+    }
+
+  }
+
+
